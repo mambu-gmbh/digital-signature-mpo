@@ -1,4 +1,4 @@
-const certificate = `-----BEGIN CERTIFICATE REQUEST-----
+const csr = `-----BEGIN CERTIFICATE REQUEST-----
 MIICfjCCAWYCAQAwOTELMAkGA1UEBhMCVVMxFjAUBgNVBAoMDUNsZWFyQmFua1Np
 Z24xEjAQBgNVBAMMCW1hbWJ1LmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
 AQoCggEBAJz77BZwEzJSRzY3s07pxvStQ/0wdT4B6kNX/5c+k4nBpIo0kzN4bvwV
@@ -17,4 +17,4 @@ TXWcf2MyZq5mm5vdmSxO8Nk1
 
 `;
 
-module.exports = { certificate };
+module.exports = { csr };
