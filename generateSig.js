@@ -1,4 +1,3 @@
-const fs = require('fs');
 const rs = require('jsrsasign');
 
 kp = rs.KEYUTIL.generateKeypair("RSA", 2048);
@@ -31,6 +30,7 @@ console.log(rsaPublicKey);
 //console.log("PRIVATE KEY AGAIN:");
 
 var sig = new rs.KJUR.crypto.Signature({"alg": "SHA256withRSA"});
+
 sig.init(kp.prvKeyObj);
 sig.updateString('{"virtualAccounts":[{"ownerName":"test Client mari","accountIdentifier":{"iban":"GB32CLRB04062644624756"}}]}');
 
@@ -40,16 +40,3 @@ var sigBase64 = rs.hextob64(hSigVal);
 console.log("-----------");
 console.log("SIGNED MESSAGE:");
 console.log(sigBase64);
-
-// Store objects to files
-fs.writeFile('certificate.csr', pem, (err) => { 
-    if (err) throw err; 
-})
-
-fs.writeFile('public_key.pem', rsaPublicKey, (err) => { 
-    if (err) throw err; 
-})
-
-fs.writeFile('signed_message.txt', sigBase64, (err) => { 
-    if (err) throw err; 
-})

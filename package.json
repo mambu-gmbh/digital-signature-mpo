@@ -1,6 +1,6 @@
 {
   "name": "DigitalSignatureCB",
-  "main": "jsrsasign.js",
+  "main": "index.js",
   "version": "1.0.0",
   "description": "RSA digital signature",
   "author": "Alex Gabor"
