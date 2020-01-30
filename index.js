@@ -1,4 +1,4 @@
 const data = require('./data');
-const jsrsasign = require('/node_modules/jsrsasign');
+const jsrsasign = require('./jsrsasign');
 
 module.exports = { data, jsrsasign };
