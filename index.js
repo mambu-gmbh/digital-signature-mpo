@@ -1,4 +1,4 @@
-const certificate = require('./certificate');
+const data = require('./data');
 const jsrsasign = require('./jsrsasign');
 
-module.exports = { certificate, jsrsasign };
+module.exports = { data, jsrsasign };
