@@ -16,6 +16,5 @@ TXWcf2MyZq5mm5vdmSxO8Nk1
 -----END CERTIFICATE REQUEST-----
 
 `;
-const signedMessage = `CeClheJPFh1uRE/+Gb4B8Ge6R9iPQEV752Qh7hIXQeBIlp1DXBeiE77c8eFZSJNjx781SgRD0JO/Z+fJGOF11CPGJ54XTmCRAvS8PbmC1g014RDFFv5XpuUW616ShCcwQOXyShYZ71iKnwQN4BsIkFIwYUyK82mxgjUv63/i7JBwM/2K02VQ84lOw1wKtHyuEKSv6flXxaf1j/nvJFLp84doFSfI0SkewdCNsGky0wAgjF7YggA/AuvIYCaO6D8QqhviUcRCR4el8hF0/XPECAvYZCTBQq5ArKq2Jl61SqOux/sV6kRgh5GWPd7AbAmLtLPwiTzbx2UaM4Bq7VqIsA==`;
 
-module.exports = { certificate, signedMessage };
+module.exports = { certificate };
